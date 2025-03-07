@@ -4,7 +4,7 @@ aliases:
 description: SPI Extensions
 title: SPI Extensions
 type: docs
-weight: 60
+weight: 70
 ---
 
 
@@ -21,8 +21,8 @@ You can follow the [steps](https://www.apache.org/info/verification) here, and u
 #### Source Release
 
 * [source](https://www.apache.org/dyn/closer.lua/dubbo/dubbo-spi-extensions/1.0.2/apache-dubbo-extensions-1.0.2-src.zip) |
-  [asc](https://www.apache.org/dyn/closer.lua/dubbo/dubbo-spi-extensions/1.0.2/apache-dubbo-extensions-1.0.2-src.zip.asc) |
-  [sha512](https://www.apache.org/dyn/closer.lua/dubbo/dubbo-spi-extensions/1.0.2/apache-dubbo-extensions-1.0.2-src.zip.sha512)
+  [asc](https://downloads.apache.org/dubbo/dubbo-spi-extensions/1.0.2/apache-dubbo-extensions-1.0.2-src.zip.asc) |
+  [sha512](https://downloads.apache.org/dubbo/dubbo-spi-extensions/1.0.2/apache-dubbo-extensions-1.0.2-src.zip.sha512)
 
 #### Maven Release
 
