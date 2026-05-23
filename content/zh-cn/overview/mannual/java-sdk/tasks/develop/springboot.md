@@ -110,7 +110,9 @@ public class ProviderConfiguration {
 
 ### Dubbo 注解
 * `application.properties` 或 `application.yml` 配置文件。
-* `@DubboService`、`@DubboReference` 与 `EnableDubbo` 注解。其中 `@DubboService` 与 `@DubboReference` 用于标记 Dubbo 服务，`EnableDubbo` 启动 Dubbo 相关配置并指定 Spring Boot 扫描包路径。
+* 注解
+    * `@DubboService` 与 `@DubboReference`：用于标记 Dubbo 服务。
+    * `@EnableDubbo`：启动 Dubbo 相关配置并指定 Spring Boot 扫描包路径。
 
 #### @DubboService 注解
 
@@ -189,7 +191,7 @@ public class ProviderConfiguration {
 
 
 #### 通过 dubbo.properties 补充配置
-对于使用 `DubboService` 或 `DubboReference` 的场景，可以通过在项目 resources 目录下增加 dubbo.properties 文件作为配置补充，[具体格式](../principle/#1-配置格式)这里有更详细解释。
+对于使用 `DubboService` 或 `DubboReference` 的场景，可以通过在项目 resources 目录下增加 dubbo.properties 文件作为配置补充，[具体格式](/zh-cn/overview/mannual/java-sdk/reference-manual/config/principle)这里有更详细解释。
 
 ```properties
 dubbo.service.org.apache.dubbo.springboot.demo.DemoService.timeout=5000
@@ -201,8 +203,7 @@ dubbo.reference.org.apache.dubbo.springboot.demo.DemoService.timeout=6000
 
 ## 更多微服务开发模式
 * [纯 API 开发模式](../api/)
-* 其他 Spring 开发模式
-    * [Spring XML](/zh-cn/overview/mannual/java-sdk/reference-manual/config/spring/xml/)
+* 其他 Spring 开发模式：[Spring XML](/zh-cn/overview/mannual/java-sdk/reference-manual/config/spring/xml/)
 
 ## Dubbo 与 Spring Cloud 的关系
 Dubbo 与 Spring Cloud 是两套平行的微服务开发与解决方案，两者都提供了微服务定义、发布、治理的相关能力，对于微服务开发者来说，我们建议在开发之初就确定好 Apache Dubbo 与 Spring Cloud 之间的选型，尽量避免两个不同体系在同一集群中出现，以降低集群维护复杂度。而对于一些确需两套体系共存的场景，为了解决相互之间的通信问题，我们提供了 [Dubbo 与 Spring Cloud 异构微服务体系互通最佳实践](/zh-cn/blog/2023/10/07/微服务最佳实践零改造实现-spring-cloud-apache-dubbo-互通/) 解决方案。

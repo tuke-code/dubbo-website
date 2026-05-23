@@ -4,7 +4,7 @@ aliases:
     - /zh/docs3-v2/
     - /zh-cn/docs3-v2/
 always_unfold: true
-description: Dubbo SDK 用户手册
+description: Dubbo SDK 用户手册的相关说明
 feature:
     description: |
         提供 Java、Golang、Rust、Node.js、Python 等多语言 SDK 实现，支持基于 IDL 的跨语言服务定义和基于 Protobuf、Json 的数据编码
@@ -13,7 +13,7 @@ linkTitle: 用户手册
 no_list: true
 title: Dubbo SDK 用户手册
 type: docs
-weight: 6
+weight: 2
 ---
 
 > 本文档基于 Dubbo3 编写，由于 Dubbo3 完全兼容 2.7 版本用法，因此文档中的通用功能（除 3.x 版本特有功能外）同样适用于 2.7 版本用户。

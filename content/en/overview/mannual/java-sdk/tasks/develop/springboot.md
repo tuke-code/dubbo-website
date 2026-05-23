@@ -104,7 +104,9 @@ public class ProviderConfiguration {
 
 ### Dubbo Annotations
 * `application.properties` or `application.yml` configuration files.
-* `@DubboService`, `@DubboReference`, and `EnableDubbo` annotations. Among them, `@DubboService` and `@DubboReference` are used to mark Dubbo services, while `EnableDubbo` starts Dubbo-related configurations and specifies the package path for Spring Boot scanning.
+* Annotations
+    * `@DubboService` and `@DubboReference`: mark Dubbo services.
+    * `@EnableDubbo`: enables Dubbo configuration and sets Spring Boot scan packages.
 
 #### @DubboService Annotation
 
@@ -182,7 +184,7 @@ public class ProviderConfiguration {
 ```
 
 #### Supplementing Configuration Through dubbo.properties
-For scenarios using `DubboService` or `DubboReference`, additional configuration can be provided by adding a dubbo.properties file under the project's resources directory. [Specific format](../principle/) has more detailed explanations here.
+For scenarios using `DubboService` or `DubboReference`, additional configuration can be provided by adding a dubbo.properties file under the project's resources directory. [Specific format](/en/overview/mannual/java-sdk/reference-manual/config/principle) has more detailed explanations here.
 
 ```properties
 dubbo.service.org.apache.dubbo.springboot.demo.DemoService.timeout=5000
@@ -194,8 +196,7 @@ dubbo.reference.org.apache.dubbo.springboot.demo.DemoService.timeout=6000
 
 ## More Microservice Development Patterns
 * [Pure API Development Pattern](../api/)
-* Other Spring Development Patterns
-    * [Spring XML](/en/overview/mannual/java-sdk/reference-manual/config/spring/xml/)
+* Other Spring Development Patterns: [Spring XML](/en/overview/mannual/java-sdk/reference-manual/config/spring/xml/)
 
 ## Relationship Between Dubbo and Spring Cloud
 
